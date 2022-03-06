@@ -18,7 +18,7 @@ services:
       - DB_HOST=db
       - DB_NAME=devdb
       - DB_USER=devuser
-      - DB_PASS=password
+      - DB_PASS=changeme
     depends_on:
       - db
   db:
@@ -26,4 +26,4 @@ services:
     environment:
       - POSRTGRES_DB=devdb
       - POSRTGRES_USER=devuser
-      - POSRTGRES_PASSWORD=password
+      - POSRTGRES_PASSWORD=changeme
